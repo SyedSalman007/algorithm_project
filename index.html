@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main_div">
+      <h1 class="main_head">Algorithms Project</h1>
+      <h3 class="my_members">Group Members are:</h3>
+      <ul class="my_list">
+        <li class="mem">Syed Salman Ali Zaidi <b>21K-4598</b></li>
+        <li class="mem">Hassan Shahbaz <b> 21K-3336</b></li>
+        <li class="mem">Asad Jaffer <b>21K-3164</b></li>
+      </ul>
+      <p class="main_para">Press Any Key To Start</p>
+    </div>
+
+    <div id="option_selection">
+      <h1 class="main_head">Select The Operation To Perform</h1>
+      <ol class="my_list ordered_list">
+        <li class="mem">Two Line Intersection</li>
+        <li class="mem">Convex Hull</li>
+      </ol>
+    </div>
+
+    <div id="convex_div">
+      <h1 class="main_head">Convex Hull</h1>
+      <p>
+        Enter the numbers of points: <input type="number" id="num_points" />
+        <button id="point_submit" class="btn" onclick="takePoints()">
+          Submit
+        </button>
+      </p>
+    </div>
+
+    <div id="input_points">
+      <h1 class="my_members">Click in the below box to enter the points:</h1>
+      <div class="input_zone" id="take_input"></div>
+    </div>
+
+    <div id="convex">
+      <h1 class="my_members">Select which Convex Hull Algorithm to Use:</h1>
+      <ol class="my_list ordered_list convex_list">
+        <li class="mem">Brute Force</li>
+        <li class="mem">Jarvis March</li>
+        <li class="mem">Graham scan</li>
+        <li class="mem">&nbsp;Quick Elimination</li>
+        <li class="mem">Chans Algorithm</li>
+      </ol>
+    </div>
+
+    <div id="pointsContainer">
+      <h2>The boundary points are:</h2>
+      <ul id="pointsList"></ul>
+    </div>
+
+    <!-- Script Files -->
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js" charset="UTF-8"></script>
+  </body>
+</html>
